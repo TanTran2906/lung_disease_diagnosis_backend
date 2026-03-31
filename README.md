@@ -2,7 +2,7 @@
 
 ## 1. Tổng quan
 
-Đây là backend xây dựng bằng FastAPI cho bài toán hỗ trợ chẩn đoán bệnh phổi từ nhiều nguồn dữ liệu khác nhau, bao gồm:
+Backend xây dựng bằng FastAPI cho bài toán hỗ trợ chẩn đoán bệnh phổi từ nhiều nguồn dữ liệu khác nhau, bao gồm:
 
 - văn bản mô tả triệu chứng lâm sàng
 - ảnh X-quang phổi
@@ -16,7 +16,7 @@ Hệ thống được thiết kế theo hướng service-oriented:
 
 - `routes/`: khai báo API endpoint
 - `services/`: chứa business logic và pipeline suy luận
-- `models/`: chứa `model_loader.py` và các model weights
+- `models/`: chứa `model_loader.py` và các model weights (dung lượng lớn nên không thể tải lên)
 - `data/`: dữ liệu mẫu phục vụ demo
 
 ## 2. Mục tiêu chức năng
@@ -35,20 +35,20 @@ Backend cung cấp các nhóm chức năng chính sau:
 
 Các module hiện đang dùng cùng một tập nhãn gồm 12 lớp:
 
-| ID | Nhãn hệ thống | Diễn giải |
-| --- | --- | --- |
-| 0 | `Binhthuong` | Bình thường |
-| 1 | `COPD` | Bệnh phổi tắc nghẽn mạn tính |
-| 2 | `Covid` | COVID-19 |
-| 3 | `Hen` | Hen phế quản |
-| 4 | `Lao` | Lao phổi |
-| 5 | `Phuphoi` | Phù phổi |
-| 6 | `Suyhohap` | Suy hô hấp |
-| 7 | `Trandich` | Tràn dịch màng phổi |
-| 8 | `Trankhi` | Tràn khí màng phổi |
-| 9 | `Uphoi` | U phổi |
-| 10 | `Viemphoi` | Viêm phổi |
-| 11 | `Xepphoi` | Xẹp phổi |
+| ID  | Nhãn hệ thống | Diễn giải                    |
+| --- | ------------- | ---------------------------- |
+| 0   | `Binhthuong`  | Bình thường                  |
+| 1   | `COPD`        | Bệnh phổi tắc nghẽn mạn tính |
+| 2   | `Covid`       | COVID-19                     |
+| 3   | `Hen`         | Hen phế quản                 |
+| 4   | `Lao`         | Lao phổi                     |
+| 5   | `Phuphoi`     | Phù phổi                     |
+| 6   | `Suyhohap`    | Suy hô hấp                   |
+| 7   | `Trandich`    | Tràn dịch màng phổi          |
+| 8   | `Trankhi`     | Tràn khí màng phổi           |
+| 9   | `Uphoi`       | U phổi                       |
+| 10  | `Viemphoi`    | Viêm phổi                    |
+| 11  | `Xepphoi`     | Xẹp phổi                     |
 
 ## 4. Kiến trúc triển khai
 
@@ -145,10 +145,10 @@ Pipeline chính:
 - File route: `routes/multimodal_routes.py`
 - File service: `services/multimodal_service.py`
 - Model hỗ trợ:
-  - `resnet_sbert`
-  - `mobilenet_sbert`
-  - `densenet121_sbert`
-  - `densenet169_sbert`
+    - `resnet_sbert`
+    - `mobilenet_sbert`
+    - `densenet121_sbert`
+    - `densenet169_sbert`
 
 Chức năng:
 
@@ -228,11 +228,6 @@ Thành phần chính:
 - tạo graph suy luận với dữ liệu tham chiếu
 - phân loại bằng `GATv2Conv`
 
-Lưu ý trạng thái hiện tại:
-
-- route `/gnn/predict` đã được khai báo
-- phần `load_gnn_model()` trong `models/model_loader.py` đang bị comment, nên module này chưa ở trạng thái sẵn sàng production nếu không bổ sung lại loader
-
 ### 5.8. Demo module
 
 - File route: `routes/demo_routes.py`
@@ -249,19 +244,19 @@ Chức năng:
 
 ### 6.1. Tổng quan endpoint
 
-| Method | Endpoint | Mô tả |
-| --- | --- | --- |
-| `GET` | `/` | Health message đơn giản |
-| `POST` | `/text/predict-text/` | Dự đoán từ văn bản |
-| `POST` | `/image/predict-image/` | Dự đoán từ ảnh X-quang |
-| `POST` | `/multimodal/predict-multimodal/` | Dự đoán đa phương thức |
-| `POST` | `/voting/predict-voting/` | Hợp nhất kết quả ảnh và text |
-| `GET` | `/demo/diseases` | Lấy danh sách bệnh có sample |
-| `GET` | `/demo/samples/{disease}` | Lấy sample theo bệnh |
-| `POST` | `/demo/predict` | Dự đoán bằng sample có sẵn |
-| `POST` | `/maxsat/diagnose` | Chẩn đoán bằng MaxSAT + FastText |
-| `POST` | `/rag/diagnose` | Chẩn đoán bằng RAG + LLM |
-| `POST` | `/gnn/predict` | Dự đoán bằng GNN |
+| Method | Endpoint                          | Mô tả                            |
+| ------ | --------------------------------- | -------------------------------- |
+| `GET`  | `/`                               | Health message đơn giản          |
+| `POST` | `/text/predict-text/`             | Dự đoán từ văn bản               |
+| `POST` | `/image/predict-image/`           | Dự đoán từ ảnh X-quang           |
+| `POST` | `/multimodal/predict-multimodal/` | Dự đoán đa phương thức           |
+| `POST` | `/voting/predict-voting/`         | Hợp nhất kết quả ảnh và text     |
+| `GET`  | `/demo/diseases`                  | Lấy danh sách bệnh có sample     |
+| `GET`  | `/demo/samples/{disease}`         | Lấy sample theo bệnh             |
+| `POST` | `/demo/predict`                   | Dự đoán bằng sample có sẵn       |
+| `POST` | `/maxsat/diagnose`                | Chẩn đoán bằng MaxSAT + FastText |
+| `POST` | `/rag/diagnose`                   | Chẩn đoán bằng RAG + LLM         |
+| `POST` | `/gnn/predict`                    | Dự đoán bằng GNN                 |
 
 ### 6.2. Input chi tiết
 
@@ -269,80 +264,80 @@ Chức năng:
 
 `multipart/form-data`
 
-| Trường | Kiểu | Bắt buộc | Ghi chú |
-| --- | --- | --- | --- |
-| `model_name` | `string` | Có | `FastText`, `Electra`, `DistillBERT` |
-| `text` | `string` | Không | Văn bản nhập trực tiếp |
-| `file` | `file` | Không | File `.txt` chứa triệu chứng |
+| Trường       | Kiểu     | Bắt buộc | Ghi chú                              |
+| ------------ | -------- | -------- | ------------------------------------ |
+| `model_name` | `string` | Có       | `FastText`, `Electra`, `DistillBERT` |
+| `text`       | `string` | Không    | Văn bản nhập trực tiếp               |
+| `file`       | `file`   | Không    | File `.txt` chứa triệu chứng         |
 
 #### `POST /image/predict-image/`
 
 `multipart/form-data`
 
-| Trường | Kiểu | Bắt buộc | Ghi chú |
-| --- | --- | --- | --- |
-| `model_name` | `string` | Có | `ViT`, `Lenet`, `MobileNet`, `DenseNet121`, `DenseNet169` |
-| `file` | `file` | Có | Ảnh X-quang |
+| Trường       | Kiểu     | Bắt buộc | Ghi chú                                                   |
+| ------------ | -------- | -------- | --------------------------------------------------------- |
+| `model_name` | `string` | Có       | `ViT`, `Lenet`, `MobileNet`, `DenseNet121`, `DenseNet169` |
+| `file`       | `file`   | Có       | Ảnh X-quang                                               |
 
 #### `POST /multimodal/predict-multimodal/`
 
 `multipart/form-data`
 
-| Trường | Kiểu | Bắt buộc | Ghi chú |
-| --- | --- | --- | --- |
-| `model_name` | `string` | Có | Tên multimodal model |
-| `image` | `file` | Có | Ảnh X-quang |
-| `text` | `string` | Không | Mô tả triệu chứng |
-| `text_file` | `file` | Không | File `.txt`, UTF-8 |
+| Trường       | Kiểu     | Bắt buộc | Ghi chú              |
+| ------------ | -------- | -------- | -------------------- |
+| `model_name` | `string` | Có       | Tên multimodal model |
+| `image`      | `file`   | Có       | Ảnh X-quang          |
+| `text`       | `string` | Không    | Mô tả triệu chứng    |
+| `text_file`  | `file`   | Không    | File `.txt`, UTF-8   |
 
 #### `POST /voting/predict-voting/`
 
 `multipart/form-data`
 
-| Trường | Kiểu | Bắt buộc | Ghi chú |
-| --- | --- | --- | --- |
-| `image` | `file` | Có | Ảnh X-quang |
-| `text` | `string` | Không | Mô tả triệu chứng |
-| `text_file` | `file` | Không | File `.txt` |
+| Trường      | Kiểu     | Bắt buộc | Ghi chú           |
+| ----------- | -------- | -------- | ----------------- |
+| `image`     | `file`   | Có       | Ảnh X-quang       |
+| `text`      | `string` | Không    | Mô tả triệu chứng |
+| `text_file` | `file`   | Không    | File `.txt`       |
 
 #### `POST /demo/predict`
 
 `multipart/form-data`
 
-| Trường | Kiểu | Bắt buộc | Ghi chú |
-| --- | --- | --- | --- |
-| `image_sample_id` | `string` | Có | Ví dụ: `covid_img_1` |
-| `text_sample_id` | `string` | Có | Ví dụ: `covid_txt_1` |
-| `selected_models` | `array[string]` | Có | Danh sách model cần chạy |
+| Trường            | Kiểu            | Bắt buộc | Ghi chú                  |
+| ----------------- | --------------- | -------- | ------------------------ |
+| `image_sample_id` | `string`        | Có       | Ví dụ: `covid_img_1`     |
+| `text_sample_id`  | `string`        | Có       | Ví dụ: `covid_txt_1`     |
+| `selected_models` | `array[string]` | Có       | Danh sách model cần chạy |
 
 #### `POST /maxsat/diagnose`
 
 `multipart/form-data`
 
-| Trường | Kiểu | Bắt buộc | Ghi chú |
-| --- | --- | --- | --- |
-| `text` | `string` | Không | Mô tả triệu chứng |
-| `file` | `file` | Không | File `.txt` |
+| Trường | Kiểu     | Bắt buộc | Ghi chú           |
+| ------ | -------- | -------- | ----------------- |
+| `text` | `string` | Không    | Mô tả triệu chứng |
+| `file` | `file`   | Không    | File `.txt`       |
 
 #### `POST /rag/diagnose`
 
 `multipart/form-data`
 
-| Trường | Kiểu | Bắt buộc | Ghi chú |
-| --- | --- | --- | --- |
-| `text` | `string` | Không | Mô tả triệu chứng |
-| `file` | `file` | Không | File `.txt` |
-| `top_k` | `int` | Không | Mặc định `5`, giới hạn `1..10` |
-| `llm_choice` | `string` | Không | Mặc định `gemini` |
+| Trường       | Kiểu     | Bắt buộc | Ghi chú                        |
+| ------------ | -------- | -------- | ------------------------------ |
+| `text`       | `string` | Không    | Mô tả triệu chứng              |
+| `file`       | `file`   | Không    | File `.txt`                    |
+| `top_k`      | `int`    | Không    | Mặc định `5`, giới hạn `1..10` |
+| `llm_choice` | `string` | Không    | Mặc định `gemini`              |
 
 #### `POST /gnn/predict`
 
 `multipart/form-data`
 
-| Trường | Kiểu | Bắt buộc | Ghi chú |
-| --- | --- | --- | --- |
-| `file` | `file` | Có | Ảnh X-quang |
-| `text` | `string` | Có | Mô tả triệu chứng |
+| Trường | Kiểu     | Bắt buộc | Ghi chú           |
+| ------ | -------- | -------- | ----------------- |
+| `file` | `file`   | Có       | Ảnh X-quang       |
+| `text` | `string` | Có       | Mô tả triệu chứng |
 
 ### 6.3. Mẫu response chuẩn
 
@@ -350,10 +345,10 @@ Các endpoint classification thường trả về cấu trúc gần như sau:
 
 ```json
 {
-  "model": "DenseNet121",
-  "prediction": 10,
-  "label": "Viemphoi",
-  "confidence": 0.9421
+    "model": "DenseNet121",
+    "prediction": 10,
+    "label": "Viemphoi",
+    "confidence": 0.9421
 }
 ```
 
@@ -464,30 +459,3 @@ curl -X POST "http://127.0.0.1:8000/multimodal/predict-multimodal/" \
   -F "image=@sample.jpg" \
   -F "text=ho kéo dài, tức ngực, khó thở"
 ```
-
-## 10. Hạn chế hiện tại
-
-- `requirements.txt` chưa được hoàn thiện
-- nhiều đường dẫn dữ liệu và model đang hard-code tuyệt đối
-- `GEMINI_API_KEY` đang được cấu hình trực tiếp trong mã nguồn, chưa tách sang biến môi trường
-- `CORS` đang mở toàn bộ origin, chưa phù hợp cho production
-- module `GNN` chưa hoàn chỉnh do thiếu phần loader hoạt động
-- repo hiện chứa phụ thuộc vào model weights và dữ liệu cục bộ dung lượng lớn, không phù hợp để đẩy toàn bộ lên GitHub
-
-## 11. Định hướng cải tiến
-
-- chuẩn hóa cấu hình bằng `.env` hoặc `pydantic-settings`
-- tạo `requirements.txt` hoặc `pyproject.toml` đầy đủ
-- tách model artifact và dataset sang object storage hoặc release asset
-- bổ sung test cho route và service
-- bổ sung logging, health check và error handling theo chuẩn production
-- hoàn thiện `GNN pipeline` và cơ chế cache thống nhất cho toàn hệ thống
-
-## 12. Ghi chú sử dụng GitHub
-
-Để đưa dự án lên GitHub an toàn hơn:
-
-- chỉ nên đẩy source code, tài liệu và file cấu hình cần thiết
-- không nên đẩy model weights, cache, file tạm, virtual environment và dữ liệu nội bộ
-- nên thay toàn bộ secret và API key bằng biến môi trường trước khi public repository
-

@@ -1,28 +1,23 @@
 import os
+import logging
 import numpy as np
 import pandas as pd
-import logging
 import faiss
-import pickle
-import requests
-import json
+import google.generativeai as genai
 from sentence_transformers import SentenceTransformer
-from tqdm import tqdm
-import google.generativeai as genai  # Thư viện Gemini API
+
+from config import GEMINI_API_KEY
 
 
-# Configure logging
 logging.basicConfig(
-    format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)
+    format="%(asctime)s - %(levelname)s - %(message)s", level=logging.INFO
+)
 
-# Paths
+
 DATA_PATH = "D:/Data_Store/LV_KHMT/Data/text_clinical/train"
 TRAIN_CSV = "D:/Data_Store/LV_KHMT/Data/clinical_train.csv"
 VAL_CSV = "D:/Data_Store/LV_KHMT/Data/clinical_val.csv"
-CACHE_DIR = 'D:/Data_Store/LV_KHMT/Data/RAG_FAISS/cache'
-
-# Gemini API Key - https://aistudio.google.com/prompts/new_chat
-GEMINI_API_KEY = "AIzaSyD55ElQ5lUwXPsRvoq5FHCPAaQ6MV_x8nE"
+CACHE_DIR = "D:/Data_Store/LV_KHMT/Data/RAG_FAISS/cache"
 
 
 class MedicalRAG:
@@ -51,16 +46,18 @@ class MedicalRAG:
             self.train_text_embeddings = []
             for emb_str in self.train_data["Đặc trưng văn bản"]:
                 if isinstance(emb_str, str):
-                    emb_str = emb_str.strip('[]')
-                    emb = np.fromstring(emb_str, sep=' ')
+                    emb_str = emb_str.strip("[]")
+                    emb = np.fromstring(emb_str, sep=" ")
                     self.train_text_embeddings.append(emb)
                 else:
                     self.train_text_embeddings.append(np.array(emb_str))
 
             self.train_text_embeddings = np.array(
-                self.train_text_embeddings, dtype=np.float32)
+                self.train_text_embeddings, dtype=np.float32
+            )
             logging.info(
-                f"Text embeddings shape: {self.train_text_embeddings.shape}")
+                f"Text embeddings shape: {self.train_text_embeddings.shape}"
+            )
 
             return True
         except Exception as e:
@@ -74,35 +71,39 @@ class MedicalRAG:
         faiss.normalize_L2(self.train_text_embeddings)
         self.text_index.add(self.train_text_embeddings)
         logging.info(
-            f"Built text index with {self.text_index.ntotal} vectors of dimension {text_dim}")
+            f"Built text index with {self.text_index.ntotal} vectors of dimension {text_dim}"
+        )
         return True
 
     def retrieve_similar_cases(self, query_text, top_k=5):
-        logging.info(
-            f"Retrieving similar cases for query: {query_text[:50]}...")
+        logging.info(f"Retrieving similar cases for query: {query_text[:50]}...")
 
         query_text_embedding = self.text_encoder.encode(query_text)
-        query_text_embedding = np.array(
-            [query_text_embedding], dtype=np.float32)
+        query_text_embedding = np.array([query_text_embedding], dtype=np.float32)
         faiss.normalize_L2(query_text_embedding)
         logging.info(
-            f"Query text encoded. Embedding shape: {query_text_embedding.shape}")
+            f"Query text encoded. Embedding shape: {query_text_embedding.shape}"
+        )
 
         text_distances, text_indices = self.text_index.search(
-            query_text_embedding, top_k)
+            query_text_embedding, top_k
+        )
         logging.info(
-            f"Text search completed. Found {len(text_indices[0])} matches.")
+            f"Text search completed. Found {len(text_indices[0])} matches."
+        )
         logging.info(f"Top text distance scores: {text_distances[0][:5]}")
 
         similar_cases = []
         for i, idx in enumerate(text_indices[0]):
             if 0 <= idx < len(self.train_data):
-                similar_cases.append({
-                    'label': self.train_labels[idx],
-                    'content': self.train_contents[idx],
-                    'file_name': self.train_data.iloc[idx]['Tên tệp'],
-                    'similarity_score': float(text_distances[0][i])
-                })
+                similar_cases.append(
+                    {
+                        "label": self.train_labels[idx],
+                        "content": self.train_contents[idx],
+                        "file_name": self.train_data.iloc[idx]["Tên tệp"],
+                        "similarity_score": float(text_distances[0][i]),
+                    }
+                )
 
         logging.info(f"Retrieved {len(similar_cases)} similar cases")
         return similar_cases
@@ -110,15 +111,16 @@ class MedicalRAG:
     def analyze_similar_cases(self, similar_cases):
         label_weights = {}
         for case in similar_cases:
-            label = case['label']
-            similarity = case['similarity_score']
+            label = case["label"]
+            similarity = case["similarity_score"]
             if label in label_weights:
                 label_weights[label] += similarity
             else:
                 label_weights[label] = similarity
 
         most_common_labels = sorted(
-            label_weights.items(), key=lambda x: x[1], reverse=True)
+            label_weights.items(), key=lambda x: x[1], reverse=True
+        )
         logging.info(f"Most common labels sorted: {most_common_labels}")
         return most_common_labels
 
@@ -142,8 +144,12 @@ class LLMProcessor:
         self.llm_choice = llm_choice
 
         if llm_choice == "gemini":
+            if not GEMINI_API_KEY:
+                raise ValueError(
+                    "Missing GEMINI_API_KEY. Please set GEMINI_API_KEY in the .env file."
+                )
             genai.configure(api_key=GEMINI_API_KEY)
-            self.model = genai.GenerativeModel('models/gemini-2.0-flash')
+            self.model = genai.GenerativeModel("models/gemini-2.0-flash")
             logging.info("Initialized Google Gemini API")
 
     def create_prompt(self, similar_cases, patient_text):
@@ -167,7 +173,6 @@ class LLMProcessor:
 
     def generate_diagnosis(self, prompt):
         try:
-            # Thêm retry logic
             for _ in range(3):
                 try:
                     response = self.model.generate_content(prompt)
@@ -181,14 +186,19 @@ class LLMProcessor:
             return "Lỗi trong quá trình tạo chẩn đoán"
 
 
-def save_results(input_text, similar_cases, llm_diagnosis, output_file="D:/Data_Store/LV_KHMT/Data/RAG_FAISS/diagnosis_results.txt"):
-    """Save diagnosis results to file"""
-    with open(output_file, 'w', encoding='utf-8') as f:
+def save_results(
+    input_text,
+    similar_cases,
+    llm_diagnosis,
+    output_file="D:/Data_Store/LV_KHMT/Data/RAG_FAISS/diagnosis_results.txt",
+):
+    with open(output_file, "w", encoding="utf-8") as f:
         f.write(f"PATIENT INPUT: {input_text}\n\n")
         f.write("SIMILAR CASES:\n")
         for i, case in enumerate(similar_cases, 1):
             f.write(
-                f"Case {i} - {case['label']} (score: {case['similarity_score']:.3f}):\n")
+                f"Case {i} - {case['label']} (score: {case['similarity_score']:.3f}):\n"
+            )
             f.write(f"{case['content'][:500]}...\n\n")
 
         f.write("\nLLM DIAGNOSIS:\n")
@@ -197,49 +207,40 @@ def save_results(input_text, similar_cases, llm_diagnosis, output_file="D:/Data_
     logging.info(f"Results saved to {output_file}")
 
 
-# Main function
 def main():
-    # Choose LLM
-    llm_choice = "gemini"  # Change to "huggingface" if preferred
+    llm_choice = "gemini"
 
-    # Create and initialize RAG system
     rag_system = MedicalRAG()
     if not rag_system.initialize():
         logging.error("Failed to initialize RAG system")
         return
 
-    # Initialize LLM processor
     llm_processor = LLMProcessor(llm_choice=llm_choice)
 
-    # Get patient input
     input_text = "ho khan, khó thở, phổi ran, sốt, mệt mỏi, chán ăn"
     logging.info(f"Processing patient input: {input_text}")
 
-    # Retrieve similar cases
     similar_cases = rag_system.retrieve_similar_cases(input_text, top_k=5)
 
-    # Create prompt for LLM
     prompt = llm_processor.create_prompt(similar_cases, input_text)
     logging.info(f"Created prompt for LLM: {len(prompt)} characters")
 
-    # Generate diagnosis using LLM
     llm_diagnosis = llm_processor.generate_diagnosis(prompt)
     logging.info("LLM diagnosis generated")
 
-    # Print results
     print("\n=== PATIENT INPUT ===")
     print(input_text)
 
     print("\n=== SIMILAR CASES ===")
     for i, case in enumerate(similar_cases, 1):
         print(
-            f"{i}. {case['label']} - {case['file_name']} (similarity: {case['similarity_score']:.3f})")
+            f"{i}. {case['label']} - {case['file_name']} (similarity: {case['similarity_score']:.3f})"
+        )
         print(f"   {case['content'][:100]}...")
 
     print("\n=== LLM DIAGNOSIS ===")
     print(llm_diagnosis)
 
-    # Save results
     save_results(input_text, similar_cases, llm_diagnosis)
 
 
