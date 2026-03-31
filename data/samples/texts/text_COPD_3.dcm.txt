@@ -1,0 +1,10 @@
+hoibenh_quatrinhbenhly: Bệnh nhân đau lối ngực, kèm ho đàm, nay khó thở -> Nhập viện
+khambenh_toanthan: Bệnh tỉnh, tiếp xúc tốt.
+Da niêm hồng. Chi ấm, mạch rõ.
+SpO2: 97% (khí trời)
+caccoquan_hohap: bình thường
+caccoquan_tuanhoan: bình thường
+tiensubenh_banthan: Đái tháo đường type 2, Viêm phế quản phổi
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: Số lượng bạch cầu: 12.04
+tongketba_quatrinhbenhly_dienbienlamsang: + Bệnh cách đây 3 ngày sốt, ho đàm , khó thở, uống thuốc không giảm---> nhập viện; *Tiền sử: COPD, Hút thuốc lá, ĐTĐ type 2; *Khám: -Bệnh tỉnh, tiếp xúc tốt, spo2:; -Than khó thở; -Thở co kéo nhẹ; -nhiệt độ:; -HA: 110/ 70 mmHg; -Tim đều; -Phổi ran rít, ngáy; -Bụng mềm, gan lách sờ không chạm; ấn đau nhẹ thượng vị;
++-Bệnh tỉnh, tiếp xúc tốt; -than mệt; -Tim đều; -Phổi ran rít, ngáy; -Bụng mềm, gan lách sờ không chạm; ấn đau nhẹ thượng vị; - Than đau lưng;

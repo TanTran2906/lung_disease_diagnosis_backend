@@ -1,0 +1,13 @@
+hoibenh_quatrinhbenhly: Bệnh 1 ngày: ho, khò khè, thở mệt . nhập viện.
+khambenh_toanthan: Khám: 10,5kg
+Tỉnh, môi hồng, khóc không khàn tiếng
+Không sốt
+Mạch quay rõ, chi ấm,
+Thở đều, co kéo liên sườn, hõm ức.
+Nhịp thở: 36 l/p
+caccoquan_hohap: Phổi ran ẩm, ngáy
+caccoquan_tuanhoan: Tim đều
+tiensubenh_banthan: 3500gr
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: 
+tongketba_quatrinhbenhly_dienbienlamsang: + Bệnh 1 ngày: ho, khò khè, thở mệt . nhập viện.; - Khám: 10,5kg; Tỉnh, môi hồng, khóc không khàn tiếng Không sốt; Mạch quay rõ, chi ấm, Thở đều, co kéo liên sườn, hõm ức.; Nhịp thở: 36 l/p; Tim đều Phổi ran ngáy, ít ran ẩm Bụng mềm;
++Tỉnh, môi hồng, Không sốt; Ăn ít; Mạch quay rõ, chi ấm, Thở đều Nhịp thở: 30 l/p; Tim đều Phổi thô; Bụng mềm;

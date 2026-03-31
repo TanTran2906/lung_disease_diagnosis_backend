@@ -1,0 +1,12 @@
+hoibenh_quatrinhbenhly: Bệnh ho khan khoảng nửa tháng nay, ho ít, không sốt, cùng ngày nhập viện bệnh ho ra máu đỏ tươi lẫn đỏ bầm khoảng 2 lần, không giảm => nhập viện.
+khambenh_toanthan: Bệnh tỉnh, tiếp xúc tốt.
+Da niêm hồng.
+Chi ấm, mạch rõ.
+caccoquan_hohap: Phổi rale ẩm
+caccoquan_tuanhoan: bình thường
+tiensubenh_banthan: Lao phổi cũ đã điều trị, Đái tháo đường type 2
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: XQ: Phổi:
+-Phế trường: Mờ phế nang lan tỏa vùng hạ đòn phổi (P)
+Xẹp vùng đỉnh phổi (P)
+tongketba_quatrinhbenhly_dienbienlamsang: +; Đường máu mao mạch tại giường: 205 mg%.
++; -Bệnh tỉnh, tiếp xúc tốt; -Tổng trạng gầy; -Da niêm hồng nhạt -Hiện không khạc ra máu thêm; -Hiện không khó thở; Tim : T1 T2 rõ đều trùng mạch quay Phổi: thô; Bụng: mềm, gan lách sờ không chạm; Xpert (+);

@@ -1,0 +1,8 @@
+hoibenh_quatrinhbenhly: Bệnh nhân tự đâm bằng dao cán vàng vào ngực (P) => nhập viện.
+khambenh_toanthan: Bệnh nhân tỉnh, tiếp xúc tốt. Da niêm hồng.
+caccoquan_hohap: bình thường
+caccoquan_tuanhoan: bình thường
+tiensubenh_banthan: Chưa ghi nhận
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: 
+tongketba_quatrinhbenhly_dienbienlamsang: + Bệnh nhân tự đâm bằng dao cán vàng vào ngực (P) => nhập viện. Tiền sử: Chưa ghi nhận; Khám:; - HA: 100/60 mmHg; - Bệnh nhân tỉnh, tiếp xúc tốt.; - Da niêm hồng. - Không khó thở.; - Tim đều.; - Phổi không ran.; - Bụng mềm. - Vết thương ngực (P) # 1cm.;
++; - Bệnh tỉnh, tiếp xúc tốt.; - Da niêm hồng nhạt; - Không khó thở.; - Giảm đau vết thương ngực; - Tràn khí dưới da ngực (P) giảm; - Vết thương ngực (P) # 1cm khô; - Vết mổ dẫn lưu màng phổi (P) khô; - Tim đều.; - Phổi trong; - Bụng mềm, gan lách sờ không chạm; KQ XQ : Hiện không tràn khí - máu màng phổi;

@@ -1,0 +1,8 @@
+hoibenh_quatrinhbenhly: Cùng ngày, bệnh nhân mệt nhiều - > Nhập viện
+khambenh_toanthan: Bệnh tỉnh , tiếp xúc tốt, toàn trạng trung bình, da niêm hồng
+caccoquan_hohap: bình thường
+caccoquan_tuanhoan: bình thường
+tiensubenh_banthan: Suy thận mạn, Tăng huyết áp , Đái tháo đường type 2
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: Xét nghiệm đường máu mao mạch tại giường (một lần): 192, WBC: 8.77, NEU#: 7.57, MONO#: 0.33, LYM#: 0.70, HGB: 7.0, HCT: 22.3, MCV: 83.2, PLT: 130, EOS: 1.48, BASO: 0.48, Creatinin: 20.10, eGFR (MDRD): 20.10, Na+: 130.00, K+: 4.94, Cl-: 85.80, Glucose: 151.20, Urê: 278.40, APTT: 29.1, APTT: 29.1, HBsAg: 0.37, Anti HCV: .,
+tongketba_quatrinhbenhly_dienbienlamsang: +Bệnh nhân phù mặt kèm theo khó thở, mệt mỏi, ăn uống kém--> nhập viện; Tiền căn: đái tháo đường type 2; suy thận mạn; Khám:; Bệnh nhân tỉnh, tiếp xúc tốt; Da niêm hồng nhạt; Thể trạng trung bình; ăn kém; phù mặt; tê tay chân; tiểu khá; Tim đều rõ; Phổi thô; Bụng mềm, ấn đau thượng vị; gan lách không sờ chạm
++Bệnh mê; Da niêm hồng nhạt; Thở hước theo máy; M: 117 l/p; HA: 110/70 mmHg; Tim nhanh đều; Phổi ran ẩm 2 đáy; Bụng mềm; .

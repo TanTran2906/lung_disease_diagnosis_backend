@@ -1,0 +1,9 @@
+hoibenh_quatrinhbenhly: Bệnh nhân đột ngột lên cơn khó thở, nghỉ ngơi không giảm -> nhập viện
+khambenh_toanthan: Bệnh tỉnh, tiếp xúc tốt.
+Da niêm hồng. Chi ấm, mạch rõ.
+caccoquan_hohap: bình thường
+caccoquan_tuanhoan: bình thường
+tiensubenh_banthan: Tai biến mạch máu não , hen
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: ProBNP: 2011.00, K+: 2.91
+tongketba_quatrinhbenhly_dienbienlamsang: +Bệnh ho đàm # 3 ngày, điều trị không giảm --> nhập viện; T/C: di chứng nhồi máu não, hen phế quản(?); Khám:; Bệnh tỉnh, tiếp xúc tốt; da niêm hồng; HA: 110/70 mmHg; SpO2: 94%; Ho đàm; Không sốt; Tim đều; Phổi ít rale ngáy, rít; Bụng mềm, gan lách sờ không chạm; ấn đau thượng vị;
++Bệnh tỉnh, tiếp xúc tốt; da niêm hồng; Không sốt; yếu 1/2 người (P) cũ; Tim đều; Phổi thô; Bụng mềm, gan lách sờ không chạm;

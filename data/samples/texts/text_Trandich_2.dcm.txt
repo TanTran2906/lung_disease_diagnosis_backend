@@ -1,0 +1,10 @@
+hoibenh_quatrinhbenhly: Bệnh nhân đau lối ngực (T) # 1 tháng, điều trị không giảm -> Nhập viện
+khambenh_toanthan: Bệnh tỉnh, tiếp xúc tốt.
+Da niêm hồng. Chi ấm, mạch rõ.
+SpO2: 97% (Khí trời)
+caccoquan_hohap: bình thường
+caccoquan_tuanhoan: bình thường
+tiensubenh_banthan: Chưa ghi nhận
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: Số lượng bạch cầu: 6.11, Số lượng hồng cầu: 4.01, Số lượng tiểu cầu: 476
+tongketba_quatrinhbenhly_dienbienlamsang: + Bệnh sử: Bệnh gần đây đau vùng mạn sườn (T), không ho, không sốt, ------> Nhập viện.; Tiền căn: Khỏe.; Khám: Bệnh tỉnh, tiếp xúc tốt.; Than đau vùng mạn sườn (T); HA: 110/ 70 mmHg; không sốt; không ho; Thể trạng trung bình.; Niêm hồng.; Tim đều rõ.; Phổi không rale.; Bụng mềm, gan lách sờ không chạm.;
++Khám:; Bệnh nhân tỉnh, tiếp xúc tốt; Da niêm hồng; Thể trạng trung bình; bệnh tạm ổn; Tim đều rõ; Phổi thông khí; Bụng mềm, gan lách không sờ chạm;

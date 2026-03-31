@@ -1,0 +1,12 @@
+hoibenh_quatrinhbenhly: Bệnh khởi phát cách nhập viện 3 ngày, bệnh nhân phát hiện dương tính với covid-19 (Bằng test nhanh và Real-time PCR Corova Virus), điều trị tại TTYT huyện Tịnh Biên. Cùng ngày nhập viện, bệnh nhân khó thở tăng, không đáp ứng điều trị => chuyển viện
+khambenh_toanthan: - Bệnh nhân tỉnh, tiếp xúc được
+- Niêm hồng
+- Tạng Béo phì
+caccoquan_hohap: Phổi ran nổ 2 bên
+caccoquan_tuanhoan: Tim đều, rõ
+tiensubenh_banthan: - Đã tiêm vaccin: 2 mũi Abdala
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: Virus Real - time PCR ( SARS CoV2 )DƯƠNG TÍNH (CT:26.72)
+tongketba_quatrinhbenhly_dienbienlamsang: Bệnh khởi phát cách nhập viện 3 ngày, bệnh nhân phát hiện dương tính với covid-19 (Bằng test nhanh và Real-time PCR Corova Virus), điều trị tại TTYT huyện Tịnh Biên. Cùng ngày nhập viện, bệnh nhân khó thở tăng, không đáp ứng điều trị => chuyển viện;
+TS: Chưa ghi nhận - Đã tiêm vaccin: 2 mũi Abdala - Mã số Covid: chưa có;
+KHÁM; - Bệnh nhân tỉnh, tiếp xúc được - Niêm hồng; - Tạng Béo phì - Thở co kéo nhẹ - Tim đều, rõ, tần số lần/phút; - Phổi ran nổ, ẩm; - Bụng mềm
+Virus Real - time PCR ( SARS CoV2 )DƯƠNG TÍNH (CT:26.72)

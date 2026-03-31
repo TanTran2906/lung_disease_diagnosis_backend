@@ -1,0 +1,7 @@
+hoibenh_quatrinhbenhly: BỆNH SỬ: Cùng ngày nhập viên bệnh nhân khó khè, khó thở, xịt họng 4 nhát không giảm => Nhập viện;
+khambenh_toanthan: Bệnh nhân tỉnh, tiếp xúc tốt. Da niêm hồng. Khó thở phải ngồi. SpO2: 97% (thở oxy).
+caccoquan_hohap: Phổi ran ngáy
+caccoquan_tuanhoan: bình thường
+tiensubenh_banthan: Hen phế quản
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: X-quang ngực thẳng: Viêm phế quản
+tongketba_quatrinhbenhly_dienbienlamsang: 

@@ -1,0 +1,16 @@
+hoibenh_quatrinhbenhly: Bệnh khoảng 3 ngày nay, mệt kèm khó thở, điều trị tư không giảm, cùng ngày nhập viện bệnh mệt khó thở nhiều => nhập viện.
+khambenh_toanthan: Bệnh nhân tỉnh, tiếp xúc tốt.
+Da niêm hồng.
+Chi ấm, mạch rõ.
+SpO2: 85% (khí phòng)
+Thở co kéo cơ ức đòn chũm, liên sườn 2 bên
+caccoquan_hohap: Phổi rale ẩm 2 đáy phổi
+caccoquan_tuanhoan: Tim đều, rõ.
+tiensubenh_banthan: U ác của phế quản và phổi di căn não đã xạ trị 1 lần
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: - TRÀN DỊCH MÀNG NGOÀI TIM LƯỢNG NHIỀU ( bề dày lớp dịch # 34 mm )
+- TRÀN DỊCH MÀNG PHỔI HAI BÊN LƯỢNG NHIỀU
+- DỊCH Ổ BỤNG LƯỢNG ÍT,
+Tràn dịch màng phổi hai bên lượng trung bình,
+Nhịp nhanh xoang, tần số 126 lần/phút, Phản ứng Rivalta: ÂM TÍNH
+tongketba_quatrinhbenhly_dienbienlamsang: +-LDVV:Mệt, khó thở; -Bệnh sử: Bệnh khoảng 3 ngày nay, mệt kèm khó thở, điều trị tư không giảm, cùng ngày nhập viện bệnh mệt khó thở nhiều => nhập viện. -Tiền sử: U ác của phế quản và phổi di căn não đã xạ trị 1 lần; -Khám: HA: 140/80mmHg; M: 126 l/p; SpO2: 85% (khí phòng); Bệnh nhân tỉnh, tiếp xúc tốt. Da niêm hồng. Chi ấm, mạch rõ. Thở co kéo cơ ức đòn chũm, liên sườn 2 bên; Tim đều, rõ. Phổi rale ẩm 2 đáy phổi; Bụng mềm, không đau.
++KHÁM:; Bệnh nhân tỉnh, tiếp xúc được; Niêm hồng nhạt; Thể trạng gầy, suy kiệt; Giảm đau vị trí đặt ODL; Ăn uống kém; Tim đều rõ; Phổi ran nổ; Bụng mềm, không đau; Bình dẫn lưu #200ml dịch vàng trong; Sonde tiểu #200ml nước tiểu vàng sậm; * Đã giải thích tình trạng bệnh nặng với người nhà;

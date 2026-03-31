@@ -1,0 +1,13 @@
+hoibenh_quatrinhbenhly: Bệnh thở mệt, ăn kém suy kiệt => vào viện
+khambenh_toanthan: Bệnh tỉnh, tiếp xúc tốt
+Da niêm nhợt nhạt, gầy
+Chi ấm mạch rõ
+caccoquan_hohap: phổi: thô
+Bụng: mềm, ấn đau vùng thượng vị, gan lách sờ không chạm
+caccoquan_tuanhoan: Tim: T1, T2 rõ đều, trùng mạch quay
+tiensubenh_banthan: thiếu máu
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: X Quang :
+-Máu lắng;1h 90mg/dl
+2h 130mg/dl
+tongketba_quatrinhbenhly_dienbienlamsang: +Bệnh thở mệt, ăn uống kém nhiều ngày vào viện=> vào viện; Bệnh tỉnh tiếp xúc tốt; toàn trạng gầy, chi ấm,mạch rõ; Da sạm đen, niêm mạc nhợt nhạt; không khó thở, không sốt; đi cầu phân đen; ăn uống khó tiêu, ợ hơi, ợ chua; Tim: điều; phổi: giảm âm phế bào đáy phổi (P); Bụng: mềm, ấn đau vùng thượng vị, gan lách sờ không chạm;
++; Bệnh tỉnh tiếp xúc tốt; toàn trạng gầy, chi ấm,mạch rõ; Da sạm đen, niêm mạc nhợt nhạt; không khó thở, không sốt; đi cầu phân đen quánh, khuôn, không khắm; ăn uống khó tiêu, ợ hơi, ợ chua; Tim: đều; phổi: giảm âm phế bào đáy phổi (P); Bụng: mềm, ấn đau vùng thượng vị, gan lách sờ không chạm; BK (+) 2 mẫu;

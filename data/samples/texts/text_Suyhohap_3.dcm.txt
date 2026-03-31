@@ -1,0 +1,10 @@
+hoibenh_quatrinhbenhly: Bệnh nhân bị ho đàm khó khạc 3 ngày, cùng ngày bị khó thở --> nhập viện
+khambenh_toanthan: Bệnh nhân lừ đừ, thở co kéo, nói từng từ SpO2 85% khí trời
+Da niêm tím, tạng Cushing
+Chi ấm, mạch rõ
+caccoquan_hohap: Phổi ran rít, ran ngáy
+caccoquan_tuanhoan: Tim đều rõ, không âm thổi
+tiensubenh_banthan: COPD; cushing
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: 
+tongketba_quatrinhbenhly_dienbienlamsang: +Bệnh nhân bị ho đàm khó khạc 3 ngày, cùng ngày bị khó thở --> nhập viện Tiền căn: COPD; cushing; Khám:; HA: 140/80 mmHg; Bệnh nhân lừ đừ, thở co kéo, nói từng từ SpO2 85% khí trời; Da niêm tím, tạng Cushing; Chi ấm, mạch rõ Tim đều rõ, không âm thổi; Phổi ran rít, ran ngáy; Bụng mềm, không đau, gan lách sờ không chạm
++

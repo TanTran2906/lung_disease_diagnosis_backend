@@ -1,0 +1,9 @@
+hoibenh_quatrinhbenhly: Bệnh nhân mệt, đau nhức nhiều vùng cơ thể-> nhâp viện
+khambenh_toanthan: Bệnh tỉnh, tiếp xúc tốt.
+Da niêm hồng. Chi ấm, mạch rõ.
+caccoquan_hohap: bình thường
+caccoquan_tuanhoan: bình thường
+tiensubenh_banthan: K phổi di căn xương
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: WBC: 21.60
+tongketba_quatrinhbenhly_dienbienlamsang: +Bệnh sử: Bệnh nhân mệt nhiều ngày ăn uống kém, đau nhức nhiều vùng cơ thể-> nhâp viện; Tiền sử: K phổi di căn xương đang xạ trị; Khám:; Bệnh tỉnh, tiếp xúc tốt; Thể trạng trung bình; Niêm hồng nhạt; Tim đều rõ; Phổi thô; Bụng mềm, gan lách sờ không chạm.; Mạch nhẹ; HA: 60/30 mmHg; Sp02: 95%;
++KHÁM:; - BN tỉnh, tiếp xúc tốt; - Niêm hồng; - Ăn uống kém; - Đau nhứt toàn thân; - Tim đều; - Phổi thông khí; - Bụng mềm;

@@ -1,0 +1,11 @@
+hoibenh_quatrinhbenhly: Cùng ngày nhập viện bệnh nặng ngực, khó thở người nhà đưa nhập viện
+khambenh_toanthan: Bệnh tỉnh, Tiếp xúc tốt.
+Da niêm hồng. Chi ấm, mạch rõ
+Khó thở co kéo cơ hô hấp phụ SpO2: 88%
+Phù chân
+caccoquan_hohap: Phổi ran ẩm nổ
+caccoquan_tuanhoan: Tim đều
+tiensubenh_banthan: Suy thận đang chạy thận
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: Xét nghiệm đường máu mao mạch tại giường (một lần): 156, Số lượng bạch cầu: 17.10, - Trung tính: 15.10, - Lympho: 1.10, - Mono: 0.66, - Ưa axít: 0.05, - Ưa bazơ: 0.17, Số lượng hồng cầu: 2.79, Huyết sắc tố: 7.7, Hematocrit: 24.3, Thể tích trung bình hồng cầu (MCV): 87.3, Lượng HST trung bình hồng cầu (MCH): 27.6, Nồng độ HST trung bình hồng cầu (MCHC): 31.6, Độ phân tán của đường kính hồng cầu (RDW): 14.2, Số lượng tiểu cầu: 202, MPV: 7.76, Thể tích khối tiểu cầu (PCT): 0.16, Độ phân tán của đường kính tiểu cầu (PDW): 19.0, - Trung tính: 88.50, - Lympho: 6.44, - Mono: 3.84, - Ưa axít: 0.27, - Ưa bazơ: 0.98, - SGPT (ALT): 22.28, - SGOT (AST): 18.19, - Creatinin: 7.9, eGFR (MDRD): 5.41, - Na+: 139, - K+: 3.9, - Cl-: 102, - Glucose: 143.62, - GGT: 21.94,
+tongketba_quatrinhbenhly_dienbienlamsang: +LDVV: Khó thở; Bệnh sử: Cùng ngày nhập viện bệnh nặng ngực, khó thở người nhà đưa nhập viện Tiền sử: Suy thận đang chạy thận; Khám:; M: 106 lần/phút; HA: 150/90 mmHg; Bệnh tỉnh, Tiếp xúc tốt. Da niêm hồng. Chi ấm, mạch rõ Khó thở co kéo cơ hô hấp phụ SpO2: 88%; Phù chân; Tim đều Phổi ran ẩm nổ; Bụng mềm, không đau, gan lách sờ không chạm
++;

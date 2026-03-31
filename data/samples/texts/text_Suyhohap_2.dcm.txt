@@ -1,0 +1,13 @@
+hoibenh_quatrinhbenhly: Cách nhập viện 1 ngày bệnh than ho khan nhiều, cùng ngày nhập viện bệnh còn ho khan + sốt cao, phù nhẹ 2 chân, mệt nhiều => nhập viện
+khambenh_toanthan: Bệnh tỉnh,đừ. Tiếp xúc tốt.
+Da niêm hồng.
+Chi ấm, mạch rõ
+Tĩnh mạch cổ nổi (+)
+SpO2: 85% (thở oxy)
+caccoquan_hohap: Phổi rale ngáy 2 bên
+caccoquan_tuanhoan: Tim đều
+tiensubenh_banthan: Khỏe
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: CRP: 4.3,
+Xquang ngực thẳng: Viêm phổi không loại trừ Lao phổi.
+tongketba_quatrinhbenhly_dienbienlamsang: +-LDVV: Mệt, ho khan + sốt; -Bệnh sử: Cách nhập viện 1 ngày bệnh than ho khan nhiều, cùng ngày nhập viện bệnh còn ho khan + sốt cao, phù nhẹ 2 chân, mệt nhiều => nhập viện -Khám:; HA: 110/70mmHg; M: 120 lần/phút; SpO2: 85% (thở oxy); Nhiệt độ: 39 độ; Bệnh tỉnh,đừ. Tiếp xúc tốt. Da niêm hồng. Chi ấm, mạch rõ Tĩnh mạch cổ nổi (+); Tim đều Phổi rale ngáy 2 bên; Bụng mềm, không đau, gan lách sờ không chạm
++-Khám:; Bệnh tỉnh,đừ. Tiếp xúc được; Da niêm hồng. Chi ấm, mạch rõ Tĩnh mạch cổ nổi (+); Thở đều; HA: 120/80mmHg; M: 120 lần/phút; SpO2: 96% khí trời; Nhiệt độ: 37 độ; Tim đều Phổi thô; Bụng mềm, không đau, gan lách sờ không chạm

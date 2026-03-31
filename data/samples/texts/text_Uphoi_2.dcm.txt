@@ -1,0 +1,11 @@
+hoibenh_quatrinhbenhly: Cách nhập viện 4 ngày, bệnh nhân than khó thở, ho đàm ít => Nhập viện
+khambenh_toanthan: Bệnh tỉnh, tiếp xúc tốt.
+Da niêm hồng.
+Chi ấm, mạch rõ.
+SpO2 98% (khí trời).
+caccoquan_hohap: bình thường
+caccoquan_tuanhoan: bình thường
+tiensubenh_banthan: Gãy xương ức # 9 tháng, Lao phổi # 12 năm
+tongketba_tomtat_kqxn_cls_cogiatrichandoan: 
+tongketba_quatrinhbenhly_dienbienlamsang: + Bệnh nhân sốt, ho đàm kèm theo mệt mỏi, ăn uống kém--> nhập viện; Tiền căn: U phổi; Khám:; Bệnh nhân tỉnh, tiếp xúc tốt; Da niêm hồng; Thể trạng trung bình; sốt; ho đàm; Tim đều rõ; Phổi ran nổ; Bụng mềm, gan lách không sờ chạm;
++ Bệnh nhân sốt, ho đàm kèm theo mệt mỏi, ăn uống kém--> nhập viện; Tiền căn: U phổi; Khám:; Bệnh nhân tỉnh, tiếp xúc tốt; Da niêm hồng; Thể trạng trung bình; sốt; ho đàm; Tim đều rõ; Phổi ran nổ; Bụng mềm, gan lách không sờ chạm;
